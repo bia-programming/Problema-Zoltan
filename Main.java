@@ -10,6 +10,7 @@ public class Main {
         ArrayList<Car> cars=new ArrayList<>();
         ArrayList<Suv> suv=new ArrayList<>();
         int a=1,b=1;
+
         System.out.println("1.Vizualizare car: ");
         System.out.println("2.Vizualizare suv: ");
         System.out.println("3.Adaugare car: ");
@@ -28,8 +29,8 @@ public class Main {
                         System.out.println("Id: " +cars.get(i).getId());
                         System.out.println("Wind shiled: " +cars.get(i).isWindShiled());
                         System.out.println("Wheels: " +cars.get(i).getWheels());
-                        System.out.println("Is leather: " +cars.get(i).isLeather);
-                        System.out.println("Seats: " +cars.get(i).seats);
+                        System.out.println("Is leather: " +cars.get(i).isLeather());
+                        System.out.println("Seats: " +cars.get(i).getSeats());
                     }
                     break;
 
@@ -38,8 +39,8 @@ public class Main {
                         System.out.println("Id: "+suv.get(j).getId());
                         System.out.println("Wind shiled: "+suv.get(j).isWindShiled());
                         System.out.println("Wheels: "+suv.get(j).getWheels());
-                        System.out.println("Suspension type: "+suv.get(j).suspensionType);
-                        System.out.println("Has removale roof: "+ suv.get(j).hasRemovableRoof);
+                        System.out.println("Suspension type: "+suv.get(j).getSuspensionType());
+                        System.out.println("Has removale roof: "+ suv.get(j).isHasRemovableRoof());
                     }
                     break;
 
